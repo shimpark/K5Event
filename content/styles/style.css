@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+/*=======================================
+메인
+=======================================*/
+main .grid {
+    overflow: hidden;
+}
+main img {
+    width: 100%;
+}
+main .gallery {
+    background: url('../images/main/gallery-bg.png') no-repeat center top;
+    background-size: cover;
+}
+main .img-list {
+    padding: 0 6.66%;
+}
+main .img-list ul {
+    display: inline-block;
+    width: 47.5%;
+    vertical-align: top;
+}
+main .img-list li {
+    margin-bottom: 1.5rem;
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+}
+main .img-list .list-rt {
+    margin-left: 5%;
+}
+main .img-list img {
+    width: 100%;
+}
+main .gallery .btn-box {
+    padding: 0.5rem 0 3rem;
+    text-align: center;
+}
+main .gallery .btn {
+    width: 13.33%;;
+}
+main .fixed-btn-box {
+    position: relative;
+    max-width: 750px;
+    width: 100%;
+}
+main .fixed-btn-box .btn {
+    width: 50%;
+}
+main .fixed-btn-box.active {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-box-shadow: 1px -8px 34px 0px rgba(0,0,0,0.5);
+    box-shadow: 1px -8px 34px 0px rgba(0,0,0,0.5);
+}
+/* 쿠폰획득 모달
+=======================================*/
+.modal-wrap.coupon {
+    width: 27.5rem;
+    letter-spacing: -0.25px;
+    text-align: center;
+}
+.modal-wrap.coupon .success {
+    padding: 7rem 0 10.5rem;
+    background: url('../images/popup/coupon-success-bg.png') no-repeat center top;
+    background-size: 100%;
+}
+.modal-wrap.coupon .success .tit {
+    font-weight: 400;
+    font-size: 1.9rem;
+    color: #b80013;
+}
+.modal-wrap.coupon .success p {
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.3;
+}
+.modal-wrap.coupon .success .btn-box {
+    padding-top: 1.25rem;
+}
+.modal-wrap.coupon .success .btn {
+    padding: 1rem 0;
+    width: 15rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #412e34;
+    background-color: #ffdd00;
+    border-radius: 3px;
+}
+.modal-wrap.coupon .success .btn .label {
+    padding: 5px 0 5px 1.75rem;
+    background: url('../images/popup/coupon-kakao.png') no-repeat center left;
+    background-size: 1.25rem;
+}
+.modal-wrap.coupon .fail {
+    padding-top: 3.5rem;
+    background-color: #fff;
+    border-radius: 1.25rem;
+}
+.modal-wrap.coupon .fail .tit {
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+.modal-wrap.coupon .fail p {
+    padding: 1rem 0 2rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #999;
+}
+.modal-wrap.coupon .fail .btn-box {
+    border-top: 1px solid #f6f6f6;
+}
+.modal-wrap.coupon .fail .btn {
+    display: block;
+    padding: 1.75rem 0;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+/*=======================================
+미디어쿼리
+=======================================*/
+@media only screen and (max-width: 750.98px) {
+
+    /*=======================================
+    메인
+    =======================================*/
+    /* 쿠폰획득 모달
+    =======================================*/
+    .modal-wrap.coupon {
+        width: 20rem;
+    }
+    .modal-wrap.coupon .success {
+        padding: 4.5rem 0 7.5rem;
+    }
+    .modal-wrap.coupon .success .tit {
+        font-size: 1.5rem;
+    }
+    .modal-wrap.coupon .success p {
+        padding-top: 0.75rem;
+        font-size: 1rem;
+    }
+    .modal-wrap.coupon .success .btn-box {
+        padding-top: 1rem;
+    }
+    .modal-wrap.coupon .success .btn {
+        padding: 0.75rem 0;
+        width: 12rem;
+        font-size: 0.8rem;
+    }
+    .modal-wrap.coupon .success .btn .label {
+        padding: 4px 0 5px 1.5rem;
+        background-size: 1rem;
+    }
+    .modal-wrap.coupon .fail {
+        padding-top: 2.5rem;
+    }
+    .modal-wrap.coupon .fail .tit {
+        font-size: 1.2rem;
+    }
+    .modal-wrap.coupon .fail p {
+        padding: 0.75rem 0 1.75rem;
+        font-size: 0.9rem;
+    }
+    .modal-wrap.coupon .fail .btn {
+        padding: 1.25rem 0;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width: 575.98px) {
+
+    /*=======================================
+    메인
+    =======================================*/
+    /* 쿠폰획득 모달
+    =======================================*/
+    .modal-wrap.coupon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+
+}
