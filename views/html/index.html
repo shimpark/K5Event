@@ -54,10 +54,6 @@
                 </div> <!-- //신형 K5 미리보기 -->
                 <img src="../../content/images/main/gift.png" alt="경품">
                 <img src="../../content/images/main/notice.png" alt="행운의 K쿠폰 발표 / 문의처 / 안내사항">
-                <div class="fixed-btn-box">
-                    <a href="javascript:void(0);" title="K5 찾기 페이지로 이동" class="btn"><img src="../../content/images/main/fixed-btn-01.png" alt="K5 찾기"></a>
-                    <a href="javascript:void(0);" title="내 쿠폰함 페이지로 이동" class="btn show-modal"><img src="../../content/images/main/fixed-btn-02.png" alt="내 쿠폰함 가기"></a>
-                </div> <!-- //고정 버튼 박스 -->
             </div>
         </main>
         <footer>
@@ -70,6 +66,12 @@
                 <img src="../../content/images/footer-ci-02.png" alt="KIA - The Power to Surprise">
             </div>
         </footer>
+        <div class="fixed-btn-box">
+            <div class="grid">
+                <a href="javascript:void(0);" title="K5 찾기 페이지로 이동" class="btn"><img src="../../content/images/main/fixed-btn-01.png" alt="K5 찾기"></a>
+                <a href="javascript:void(0);" title="내 쿠폰함 페이지로 이동" class="btn show-modal"><img src="../../content/images/main/fixed-btn-02.png" alt="내 쿠폰함 가기"></a>
+            </div>
+        </div> <!-- //고정 버튼 박스 -->
         <div class="modal-popup">
             <div class="modal-wrap coupon">
                 <div class="modal-cont success">
@@ -90,11 +92,11 @@
         </div>
         <script>
             $(document).ready(function(){
-                //fixed button box
+                
                 $(window).scroll(function(){
+                    var windowST = $(window).scrollTop();
                     $('.fixed-btn-box').addClass('active');
-
-                    if ($('.fixed-btn-box').offset().top + $(".fixed-btn-box").height() > $("footer").offset().top) {
+                    if (windowST <= 0) {
                         $('.fixed-btn-box').removeClass('active');
                     }
                 });

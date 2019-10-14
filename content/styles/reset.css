@@ -63,14 +63,13 @@ table {
 }
 html {
     overflow-x: hidden;
-    height: 100%;
 }
 body {
     overflow-x: hidden;
     font-family: 'Spoqa Han Sans', 'Nanum Gothic','Malgun Gothic','돋움','dotum','AppleGothic', Helvetica, Arial, Sans-Serif;
     font-size: 0;
     line-height: 1;
-    letter-spacing: -1px;
+    letter-spacing: -0.25px;
     color: #101010;
 }
 ul,
@@ -93,14 +92,16 @@ a {
 }
 input, select, textarea, button {
     font-family: 'Spoqa Han Sans', 'Nanum Gothic','Malgun Gothic','돋움','dotum','AppleGothic', Helvetica, Arial, Sans-Serif;
-    letter-spacing: -1px;
+    border: 0;
     box-sizing: border-box;
     outline: none;
 }
 button {
     cursor: pointer;
 }
-
+input::placeholder {
+    color: #999;
+}
 /* ::-webkit-scrollbar {
     width: 5px;
 }
